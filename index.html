@@ -74,7 +74,6 @@
             position: absolute;
             inset: 0;
             background: rgba(0, 0, 0, 0.55);
-            /* overlay semi-transparente → ahora se ve la imagen */
             z-index: 0;
         }
 
@@ -265,6 +264,26 @@
             transform: translateY(-3px);
         }
 
+        /* Logo centrado entre contacto y footer */
+        .logo-divider {
+            padding: 5rem 1.5rem 6rem;
+            text-align: center;
+            background: var(--dark-2);
+        }
+
+        .divider-logo {
+            max-width: 220px;
+            height: auto;
+            filter: brightness(1.1) contrast(1.15) sepia(0.35) hue-rotate(335deg) saturate(2.4);
+            opacity: 0.82;
+            transition: all 0.4s ease;
+        }
+
+        .divider-logo:hover {
+            opacity: 1;
+            transform: scale(1.07);
+        }
+
         footer {
             background: #050505;
             text-align: center;
@@ -310,6 +329,14 @@
             .gallery-grid {
                 grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
             }
+
+            .logo-divider {
+                padding: 3.5rem 1rem 4.5rem;
+            }
+
+            .divider-logo {
+                max-width: 180px;
+            }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -324,7 +351,7 @@
 <body>
 
     <header>
-        <img src="/img/logo.svg" alt="Taller de Costura – Glodis Martínez">
+        <img src="/img/logo.svg" alt="Taller de Costura – Gladis Martínez">
     </header>
 
     <main>
@@ -381,7 +408,7 @@
                 <img src="./img/pexels-photo-7256866.webp" alt="Prenda artesanal terminada" loading="lazy" />
                 <img src="./img/pexels-photo-10910631.jpeg" alt="Trabajo personalizado de alta costura"
                     loading="lazy" />
-                <img src="./img/logo.svg" alt="Taller Gladis Martínez Confección Artesanal a Medida" loading="lazy" />
+                
 
             </div>
         </section>
@@ -420,6 +447,11 @@
                 });
             </script>
         </section>
+
+        <!-- Logo centrado entre el formulario y el footer -->
+        <div class="logo-divider">
+            <img src="/img/logo.svg" alt="Taller Gladis Martínez – Confección Artesanal a Medida" class="divider-logo">
+        </div>
 
     </main>
 
