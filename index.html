@@ -8,7 +8,7 @@
     <meta name="description"
         content="Taller de costura en Montevideo. Confección y arreglos a medida con más de 10 años de experiencia. Prendas únicas y personalizadas." />
 
-    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <link rel="icon" href="/img/logo.svg" type="image/svg+xml" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet" />
 
@@ -16,8 +16,8 @@
         :root {
             --pink: #ffc0cb;
             --hotpink: #ff69b4;
-            --dark: #0d0d0d;
-            --dark-2: #171717;
+            --dark: #000000;
+            --dark-2: #121212;
             --green-whatsapp: #25d366;
             --text: #f0e8ed;
         }
@@ -54,7 +54,6 @@
             height: auto;
             display: block;
             margin: 0 auto;
-            color: var(--pink);
             filter: brightness(1.05) contrast(1.1) sepia(0.4) hue-rotate(330deg) saturate(2.2);
         }
 
@@ -74,7 +73,9 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.55);
+            /* overlay semi-transparente → ahora se ve la imagen */
+            z-index: 0;
         }
 
         .hero>* {
@@ -323,7 +324,7 @@
 <body>
 
     <header>
-        <img src="/logo.svg" alt="Taller de Costura – Glodis Martínez">
+        <img src="/img/logo.svg" alt="Taller de Costura – Glodis Martínez">
     </header>
 
     <main>
@@ -331,8 +332,7 @@
         <section class="hero">
             <h1>Este es nuestro espacio de creación</h1>
             <p>Confección personalizada y artesanal</p>
-            <a href="/img/istockphoto-1307302621-612x612.jpg"
-                class="btn-whatsapp" target="_blank" rel="noopener">
+            <a href="https://wa.me/598991234567" class="btn-whatsapp" target="_blank" rel="noopener">
                 Contáctanos por WhatsApp
             </a>
         </section>
@@ -349,7 +349,7 @@
             <div class="about-images">
                 <img src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800"
                     alt="Costurera trabajando concentrada en máquina de coser" loading="lazy" />
-                <img src="https://images.pexels.com/photos/4614120/pexels-photo-4614120.jpeg?auto=compress&cs=tinysrgb&w=800"
+                <img src="https://images.pexels.com/photos/6660926/pexels-photo-6660926.jpeg?auto=compress&cs=tinysrgb&w=800"
                     alt="Ambiente cálido y ordenado de taller de costura artesanal" loading="lazy" />
             </div>
         </section>
